@@ -1,0 +1,207 @@
+/* Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans) */
+
+:root {
+    --background-color: hsl(27, 66%, 92%);
+    --pri-header-clor: hsl(10, 79%, 65%);
+    --pri-cyan-color: hsl(186, 34%, 60%); 
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.chart-container {
+    width: 30rem;
+/*     height: 86vh; */
+    padding: 12px;
+}
+
+.head {
+    background-color: var(--pri-header-clor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    width: 100%;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.head h1 {
+    padding-top: 5px;
+}
+
+.content {
+    background-color: var(--very-pale-orange);
+    color: var(--medium-brown);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding: 20px 25px;
+    border-radius: 16px;
+}
+
+.chart-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px 0;
+    margin: 60px 0 30px;
+    border-bottom: 1px solid gray;
+}
+
+.chart-box .bar {
+    background-color: var(--pri-header-clor);
+    position: relative;
+    width: 30px;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    z-index: 900;
+}
+
+.chart-box .bar:hover {
+    opacity: 0.75;
+    transition: opacity 0.2s ease;
+}
+
+.chart-container .bar.active {
+    background-color: var(--pri-cyan-color);
+}
+
+.content h2, 
+.footer {
+    color: var(--dark-brown);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer p {
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: var(--medium-brown);
+}
+
+.footer h1 {
+    font-weight: 700;
+}
+
+.footer h6 {
+    font-size: 0.9rem;
+    text-align: end;
+    margin-top: 14px;
+}
+
+.info {
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: var(--dark-brown);
+    color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: -40px;
+    left: -6px;
+    z-index: 3000;
+}
+
+@media (max-width: 412px) and (min-width: 375px) {
+    .bar {
+        padding: 15px;
+        margin: 0 0 0 2px;
+    }
+}
+
+@media (max-width: 375px) {
+    .chart-container {
+        max-width: 80vw;
+        height: 80vh;
+    }
+
+    .head {
+        padding: 20px;
+    }
+
+    .head h1 {
+        font-size: 1.2rem;
+    }
+
+    .head h4 {
+        font-size: 0.78rem;
+    }
+
+    .head,
+    .content {
+        padding: 30px 15px;
+    }
+
+    .content h2 {
+        font-size: 1.3rem;
+    }
+
+    .chart-box {
+        margin: auto;
+    }
+
+    .chart-box .bar {
+        width: 15px;
+        margin: 6px;
+        padding: 20%;
+    }
+
+    .footer p {
+        font-size: 0.7rem;
+    }
+
+    .footer h1 {
+        font-size: 1.2rem;
+    }
+
+    .footer .percent p {
+        text-align: end;
+    }
+
+}
