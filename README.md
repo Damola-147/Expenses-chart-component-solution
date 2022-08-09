@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [view solution here](https://www.frontendmentor.io/solutions/responsive-expenses-chart-component-solution-using-html-css-and-js-SKrRkxq-u3)
+- Live Site URL: [view live](https://damola-147.github.io/Expenses-chart-component-solution/)
 
 ## My process
 
@@ -84,7 +84,6 @@ I want to focus more on these areas in future projects; to refine and perfect th
 
 ## Author
 
-- Website - [Adebiyi Damola](https://www.your-site.com)
 - Frontend Mentor - [@Damola-147](https://www.frontendmentor.io/profile/Damola-147)
 - Twitter - [@adebiyi_stoke](https://www.twitter.com/adebiyi_stoke)
 
