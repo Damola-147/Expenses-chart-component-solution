@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Screenshot
 
-![mobile design](/design/mobile-design.jpg)
-![desktop design](/design/desktop-design.jpg)
+![mobile design](/design/mobile-design.JPG)
+![desktop design](/design/desktop-design.JPG)
 
 ### Links
 
